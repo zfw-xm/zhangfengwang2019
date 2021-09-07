@@ -9,7 +9,7 @@
                 <el-form-item prop="username">
                     <el-input prefix-icon="el-icon-user-solid" v-model="form.username"></el-input>
                 </el-form-item>
-                <el-form-item prop="password">
+                <el-form-item prop="password"> 
                     <el-input prefix-icon="el-icon-s-platform" v-model="form.password" type="password"></el-input>
                 </el-form-item >
                 <el-form-item class="box-btns">
