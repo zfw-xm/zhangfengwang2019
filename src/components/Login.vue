@@ -49,10 +49,10 @@ export default {
             this.$refs.formRef.validate(async valid =>{
                 if (!valid) return;
                 const { data:res } = await this.$http.post("login",this.form)
-                console.log(res)
+                // console.log(res)
                 if(res.meta.status !== 200 )return this.$message.error("登录失败")
                 this.$message.success("登录成功")
-                console.log(res)
+                // console.log(res)
                 window.sessionStorage.setItem('token',res.data.token)
                 this.$router.push('/home')
             })
